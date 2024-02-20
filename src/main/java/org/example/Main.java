@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
@@ -18,14 +19,14 @@ public class Main {
 //        List<String> sortedNameList = sortName(nameList);
 //        System.out.println(sortedNameList);
         //3 task
-//        String[] stringArray = {"1, 2, 0", "4, 5"};
-//        String result = Arrays.stream(stringArray)
-//                .flatMap(str -> Arrays.stream(str.split(", ")))
-//                .map(Integer::parseInt)
-//                .sorted()
-//                .map(String::valueOf)
-//                .collect(Collectors.joining(", "));
-//        System.out.println(result);
+        String[] stringArray = {"1, 2, 0", "4, 5"};
+        String result = Arrays.stream(stringArray)
+                .flatMap(str -> Arrays.stream(str.split(", ")))
+                .map(Integer::parseInt)
+                .sorted()
+                .map(String::valueOf)
+                .collect(Collectors.joining(", "));
+        System.out.println(result);
         //4 task
 //        long a = 25214903917L;
 //        long c = 11L;
